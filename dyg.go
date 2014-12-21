@@ -10,7 +10,18 @@ import (
 
 var OttoVm = otto.New()
 
+func ImaCompiledFunc(str string) string {
+	return fmt.Sprintf("Hi, you are running a compiled-in-golang function, with input from dyg: '%s'", str)
+}
+
 func main() {
+
+	OttoVm.Set("comp", func(call otto.FunctionCall) otto.Value {
+		s := ImaCompiledFunc(call.Argument(0).String())
+		v, _ := otto.ToValue(s)
+		return v
+	})
+
 	repl()
 }
 
@@ -39,6 +50,6 @@ func repl() {
 			continue
 		}
 		res := evaluate(line)
-		fmt.Printf("result: '%s'\n", res)
+		fmt.Printf("%v\n", res)
 	}
 }

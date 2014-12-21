@@ -1,3 +1,9 @@
+License of parts:
+
+1. frontend: derived from code from github.com/gopherjs/gopherjs, see the LICENSE.gopherjs file.
+2. backend: derived from code from github.com/robertkrimen/otto, see the LICENSE.otto file.
+3. All new and original code in this project dynamic-go / dyg is licensed under:
+
 The MIT License (MIT)
 
 Copyright (c) 2014 Jason E. Aten, Ph.D.
