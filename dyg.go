@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	otto "github.com/glycerine/dynamic-go/backend"
+	otto "github.com/glycerine/dyg/backend"
 )
 
 var OttoVm = otto.New()
