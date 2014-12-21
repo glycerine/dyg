@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/robertkrimen/otto/ast"
-	"github.com/robertkrimen/otto/file"
-	"github.com/robertkrimen/otto/token"
+	"github.com/glycerine/dynamic-go/backend/ast"
+	"github.com/glycerine/dynamic-go/backend/file"
+	"github.com/glycerine/dynamic-go/backend/token"
 )
 
 var trueLiteral = &_nodeLiteral{value: toValue_bool(true)}

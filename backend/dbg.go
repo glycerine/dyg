@@ -3,7 +3,7 @@
 package otto
 
 import (
-	Dbg "github.com/robertkrimen/otto/dbg"
+	Dbg "github.com/glycerine/dynamic-go/backend/dbg"
 )
 
 var dbg, dbgf = Dbg.New()

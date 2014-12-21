@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/robertkrimen/otto/token"
+	"github.com/glycerine/dynamic-go/backend/token"
 )
 
 func (self *_runtime) cmpl_evaluate_nodeStatement(node _nodeStatement) Value {

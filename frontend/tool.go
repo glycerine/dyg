@@ -17,8 +17,8 @@ import (
 	"text/template"
 	"time"
 
-	gbuild "github.com/gopherjs/gopherjs/build"
-	"github.com/gopherjs/gopherjs/compiler"
+	gbuild "github.com/glycerine/dynamic-go/frontend/build"
+	"github.com/glycerine/dynamic-go/frontend/compiler"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"golang.org/x/crypto/ssh/terminal"

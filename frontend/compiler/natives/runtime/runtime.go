@@ -2,7 +2,7 @@
 
 package runtime
 
-import "github.com/gopherjs/gopherjs/js"
+import "github.com/glycerine/dynamic-go/frontend/js"
 
 const GOOS = theGoos
 const GOARCH = "js"

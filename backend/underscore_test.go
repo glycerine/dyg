@@ -4,7 +4,7 @@ import (
 	"./terst"
 	"testing"
 
-	"github.com/robertkrimen/otto/underscore"
+	"github.com/glycerine/dynamic-go/backend/underscore"
 )
 
 func init() {

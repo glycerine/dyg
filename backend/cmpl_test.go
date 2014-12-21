@@ -3,7 +3,7 @@ package otto
 import (
 	"testing"
 
-	"github.com/robertkrimen/otto/parser"
+	"github.com/glycerine/dynamic-go/backend/parser"
 )
 
 func Test_cmpl(t *testing.T) {

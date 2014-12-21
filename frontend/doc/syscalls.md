@@ -32,7 +32,7 @@ brew install node --devel
 ```
 Then compile and install the module:
 ```
-cd $GOPATH/src/github.com/gopherjs/gopherjs/node-syscall/
+cd $GOPATH/src/github.com/glycerine/dynamic-go/frontend/node-syscall/
 npm install --global node-gyp
 node-gyp rebuild
 mkdir -p ~/.node_libraries/

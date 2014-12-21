@@ -3,7 +3,7 @@
 package os
 
 import (
-	"github.com/gopherjs/gopherjs/js"
+	"github.com/glycerine/dynamic-go/frontend/js"
 )
 
 func runtime_args() []string {

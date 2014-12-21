@@ -5,7 +5,7 @@ package time
 import (
 	"strings"
 
-	"github.com/gopherjs/gopherjs/js"
+	"github.com/glycerine/dynamic-go/frontend/js"
 )
 
 type runtimeTimer struct {

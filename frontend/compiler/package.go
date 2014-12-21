@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gopherjs/gopherjs/gcexporter"
+	"github.com/glycerine/dynamic-go/frontend/gcexporter"
 	"golang.org/x/tools/go/types"
 )
 

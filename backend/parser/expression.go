@@ -3,9 +3,9 @@ package parser
 import (
 	"regexp"
 
-	"github.com/robertkrimen/otto/ast"
-	"github.com/robertkrimen/otto/file"
-	"github.com/robertkrimen/otto/token"
+	"github.com/glycerine/dynamic-go/backend/ast"
+	"github.com/glycerine/dynamic-go/backend/file"
+	"github.com/glycerine/dynamic-go/backend/token"
 )
 
 func (self *_parser) parseIdentifier() *ast.Identifier {

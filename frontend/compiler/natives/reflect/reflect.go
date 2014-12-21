@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/gopherjs/gopherjs/js"
+	"github.com/glycerine/dynamic-go/frontend/js"
 )
 
 var initialized = false
@@ -89,7 +89,7 @@ func MakeSlice(typ Type, len, cap int) Value {
 }
 
 func jsObject() *rtype {
-	return reflectType(js.Global.Get("$packages").Get("github.com/gopherjs/gopherjs/js").Get("Object"))
+	return reflectType(js.Global.Get("$packages").Get("github.com/glycerine/dynamic-go/frontend/js").Get("Object"))
 }
 
 func TypeOf(i interface{}) Type {

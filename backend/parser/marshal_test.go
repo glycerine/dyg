@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/robertkrimen/otto/ast"
+	"github.com/glycerine/dynamic-go/backend/ast"
 )
 
 func marshal(name string, children ...interface{}) interface{} {

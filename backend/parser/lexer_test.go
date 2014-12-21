@@ -4,8 +4,8 @@ import (
 	"../terst"
 	"testing"
 
-	"github.com/robertkrimen/otto/file"
-	"github.com/robertkrimen/otto/token"
+	"github.com/glycerine/dynamic-go/backend/file"
+	"github.com/glycerine/dynamic-go/backend/token"
 )
 
 var tt = terst.Terst

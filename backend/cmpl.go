@@ -1,8 +1,8 @@
 package otto
 
 import (
-	"github.com/robertkrimen/otto/ast"
-	"github.com/robertkrimen/otto/file"
+	"github.com/glycerine/dynamic-go/backend/ast"
+	"github.com/glycerine/dynamic-go/backend/file"
 )
 
 type _file struct {

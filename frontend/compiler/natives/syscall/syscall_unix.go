@@ -5,7 +5,7 @@ package syscall
 import (
 	"unsafe"
 
-	"github.com/gopherjs/gopherjs/js"
+	"github.com/glycerine/dynamic-go/frontend/js"
 )
 
 func runtime_envs() []string {

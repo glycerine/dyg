@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/robertkrimen/otto/ast"
-	"github.com/robertkrimen/otto/parser"
+	"github.com/glycerine/dynamic-go/backend/ast"
+	"github.com/glycerine/dynamic-go/backend/parser"
 )
 
 type _global struct {

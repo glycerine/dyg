@@ -6,7 +6,7 @@ import (
 	"bytes"
 	"unsafe"
 
-	"github.com/gopherjs/gopherjs/js"
+	"github.com/glycerine/dynamic-go/frontend/js"
 )
 
 var warningPrinted = false
@@ -23,7 +23,7 @@ func init() {
 
 func printWarning() {
 	if !warningPrinted {
-		println("warning: system calls not available, see https://github.com/gopherjs/gopherjs/blob/master/doc/syscalls.md")
+		println("warning: system calls not available, see https://github.com/glycerine/dynamic-go/frontend/blob/master/doc/syscalls.md")
 	}
 	warningPrinted = true
 }
