@@ -10,8 +10,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/glycerine/dynamic-go/backend/file"
-	"github.com/glycerine/dynamic-go/backend/token"
+	"github.com/glycerine/dyg/backend/file"
+	"github.com/glycerine/dyg/backend/token"
 )
 
 type _chr struct {

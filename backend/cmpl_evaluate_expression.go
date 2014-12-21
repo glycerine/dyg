@@ -5,7 +5,7 @@ import (
 	"math"
 	"runtime"
 
-	"github.com/glycerine/dynamic-go/backend/token"
+	"github.com/glycerine/dyg/backend/token"
 )
 
 func (self *_runtime) cmpl_evaluate_nodeExpression(node _nodeExpression) Value {

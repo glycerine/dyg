@@ -3,7 +3,7 @@
 package strings
 
 import (
-	"github.com/glycerine/dynamic-go/frontend/js"
+	"github.com/glycerine/dyg/frontend/js"
 )
 
 func IndexByte(s string, c byte) int {

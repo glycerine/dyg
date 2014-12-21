@@ -17,7 +17,7 @@ var $needsExternalization = function(t) {
     case $kindFloat64:
       return false;
     case $kindInterface:
-      return t !== $packages["github.com/glycerine/dynamic-go/frontend/js"].Object;
+      return t !== $packages["github.com/glycerine/dyg/frontend/js"].Object;
     default:
       return true;
   }
@@ -55,7 +55,7 @@ var $externalize = function(v, t) {
       var convert = false;
       var i;
       for (i = 0; i < t.params.length; i++) {
-        convert = convert || (t.params[i] !== $packages["github.com/glycerine/dynamic-go/frontend/js"].Object);
+        convert = convert || (t.params[i] !== $packages["github.com/glycerine/dyg/frontend/js"].Object);
       }
       for (i = 0; i < t.results.length; i++) {
         convert = convert || $needsExternalization(t.results[i]);
@@ -95,7 +95,7 @@ var $externalize = function(v, t) {
     if (v === $ifaceNil) {
       return null;
     }
-    if (t === $packages["github.com/glycerine/dynamic-go/frontend/js"].Object || v.constructor.kind === undefined) {
+    if (t === $packages["github.com/glycerine/dyg/frontend/js"].Object || v.constructor.kind === undefined) {
       return v;
     }
     return $externalize(v.$val, v.constructor);
@@ -211,7 +211,7 @@ var $internalize = function(v, t, recv) {
       }
     };
   case $kindInterface:
-    if (t === $packages["github.com/glycerine/dynamic-go/frontend/js"].Object) {
+    if (t === $packages["github.com/glycerine/dyg/frontend/js"].Object) {
       return v;
     }
     if (v === null) {
@@ -244,7 +244,7 @@ var $internalize = function(v, t, recv) {
         return new timePkg.Time(timePkg.Unix(new $Int64(0, 0), new $Int64(0, v.getTime() * 1000000)));
       }
     case Function:
-      var funcType = $funcType([$sliceType($emptyInterface)], [$packages["github.com/glycerine/dynamic-go/frontend/js"].Object], true);
+      var funcType = $funcType([$sliceType($emptyInterface)], [$packages["github.com/glycerine/dyg/frontend/js"].Object], true);
       return new funcType($internalize(v, funcType));
     case Number:
       return new $Float64(parseFloat(v));

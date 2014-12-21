@@ -3,7 +3,7 @@
 package math
 
 import (
-	"github.com/glycerine/dynamic-go/frontend/js"
+	"github.com/glycerine/dyg/frontend/js"
 )
 
 var math = js.Global.Get("Math")

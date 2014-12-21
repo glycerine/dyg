@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/glycerine/dynamic-go/backend/parser"
+	"github.com/glycerine/dyg/backend/parser"
 )
 
 func TestOtto(t *testing.T) {

@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/glycerine/dynamic-go/backend"
-	"github.com/glycerine/dynamic-go/backend/underscore"
+	"github.com/glycerine/dyg/backend"
+	"github.com/glycerine/dyg/backend/underscore"
 )
 
 var flag_underscore *bool = flag.Bool("underscore", true, "Load underscore into the runtime environment")

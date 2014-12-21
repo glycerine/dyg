@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/glycerine/dynamic-go/backend/file"
+	"github.com/glycerine/dyg/backend/file"
 )
 
 type _exception struct {

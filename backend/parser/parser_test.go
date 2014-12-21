@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/glycerine/dynamic-go/backend/ast"
-	"github.com/glycerine/dynamic-go/backend/file"
+	"github.com/glycerine/dyg/backend/ast"
+	"github.com/glycerine/dyg/backend/file"
 )
 
 func firstErr(err error) error {

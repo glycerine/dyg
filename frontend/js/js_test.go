@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/glycerine/dynamic-go/frontend/js"
+	"github.com/glycerine/dyg/frontend/js"
 )
 
 var dummys = js.Global.Call("eval", `({

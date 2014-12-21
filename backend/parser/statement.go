@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"github.com/glycerine/dynamic-go/backend/ast"
-	"github.com/glycerine/dynamic-go/backend/token"
+	"github.com/glycerine/dyg/backend/ast"
+	"github.com/glycerine/dyg/backend/token"
 )
 
 func (self *_parser) parseBlockStatement() *ast.BlockStatement {

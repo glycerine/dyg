@@ -5,7 +5,7 @@ import (
 	"encoding/gob"
 	"errors"
 
-	"github.com/glycerine/dynamic-go/backend/parser"
+	"github.com/glycerine/dyg/backend/parser"
 )
 
 var ErrVersion = errors.New("version mismatch")

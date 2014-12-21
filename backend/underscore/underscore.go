@@ -2,7 +2,7 @@
 Package underscore contains the source for the JavaScript utility-belt library.
 
 	import (
-		_ "github.com/glycerine/dynamic-go/backend/underscore"
+		_ "github.com/glycerine/dyg/backend/underscore"
 	)
 	// Every Otto runtime will now include underscore
 
@@ -15,7 +15,7 @@ By importing this package, you'll automatically load underscore every time you c
 To prevent this behavior, you can do the following:
 
 	import (
-		"github.com/glycerine/dynamic-go/backend/underscore"
+		"github.com/glycerine/dyg/backend/underscore"
 	)
 
 	func init() {
@@ -26,7 +26,7 @@ To prevent this behavior, you can do the following:
 package underscore
 
 import (
-	"github.com/glycerine/dynamic-go/backend/registry"
+	"github.com/glycerine/dyg/backend/registry"
 )
 
 var entry *registry.Entry = registry.Register(func() string {

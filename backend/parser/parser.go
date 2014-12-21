@@ -2,7 +2,7 @@
 Package parser implements a parser for JavaScript.
 
     import (
-        "github.com/glycerine/dynamic-go/backend/parser"
+        "github.com/glycerine/dyg/backend/parser"
     )
 
 Parse and return an AST
@@ -39,9 +39,9 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/glycerine/dynamic-go/backend/ast"
-	"github.com/glycerine/dynamic-go/backend/file"
-	"github.com/glycerine/dynamic-go/backend/token"
+	"github.com/glycerine/dyg/backend/ast"
+	"github.com/glycerine/dyg/backend/file"
+	"github.com/glycerine/dyg/backend/token"
 )
 
 // A Mode value is a set of flags (or 0). They control optional parser functionality.

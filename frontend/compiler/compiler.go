@@ -10,7 +10,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/glycerine/dynamic-go/frontend/compiler/prelude"
+	"github.com/glycerine/dyg/frontend/compiler/prelude"
 	"golang.org/x/tools/go/gcimporter"
 	"golang.org/x/tools/go/types"
 )

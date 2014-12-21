@@ -2,7 +2,7 @@
 
 package runtime
 
-import "github.com/glycerine/dynamic-go/frontend/js"
+import "github.com/glycerine/dyg/frontend/js"
 
 const GOOS = theGoos
 const GOARCH = "js"

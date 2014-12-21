@@ -5,7 +5,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/glycerine/dynamic-go/backend/token"
+	"github.com/glycerine/dyg/backend/token"
 )
 
 func (self *_runtime) evaluateMultiply(left float64, right float64) Value {

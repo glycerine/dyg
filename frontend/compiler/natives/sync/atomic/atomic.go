@@ -5,7 +5,7 @@ package atomic
 import (
 	"unsafe"
 
-	"github.com/glycerine/dynamic-go/frontend/js"
+	"github.com/glycerine/dyg/frontend/js"
 )
 
 func SwapInt32(addr *int32, new int32) int32 {

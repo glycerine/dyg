@@ -17,7 +17,7 @@ import (
 	"time"
 
 	"bitbucket.org/kardianos/osext"
-	"github.com/glycerine/dynamic-go/frontend/compiler"
+	"github.com/glycerine/dyg/frontend/compiler"
 	"github.com/neelance/sourcemap"
 	"gopkg.in/fsnotify.v1"
 )
@@ -97,7 +97,7 @@ func Parse(pkg *build.Package, fileSet *token.FileSet) ([]*ast.File, error) {
 	if isTestPkg {
 		importPath = importPath[:len(importPath)-5]
 	}
-	if nativesPkg, err := Import("github.com/glycerine/dynamic-go/frontend/compiler/natives/"+importPath, 0, "js"); err == nil {
+	if nativesPkg, err := Import("github.com/glycerine/dyg/frontend/compiler/natives/"+importPath, 0, "js"); err == nil {
 		names := append(nativesPkg.GoFiles, nativesPkg.TestGoFiles...)
 		if isTestPkg {
 			names = nativesPkg.XTestGoFiles
@@ -164,7 +164,7 @@ func Parse(pkg *build.Package, fileSet *token.FileSet) ([]*ast.File, error) {
 					if spec.Name == nil {
 						spec.Name = ast.NewIdent("sync")
 					}
-					spec.Path.Value = `"github.com/glycerine/dynamic-go/frontend/nosync"`
+					spec.Path.Value = `"github.com/glycerine/dyg/frontend/nosync"`
 				}
 			}
 		}

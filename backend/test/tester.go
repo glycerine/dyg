@@ -12,8 +12,8 @@ import (
 	"sync"
 	"text/tabwriter"
 
-	"github.com/glycerine/dynamic-go/backend"
-	"github.com/glycerine/dynamic-go/backend/parser"
+	"github.com/glycerine/dyg/backend"
+	"github.com/glycerine/dyg/backend/parser"
 )
 
 var flag_test *bool = flag.Bool("test", false, "")

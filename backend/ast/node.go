@@ -10,8 +10,8 @@ node types are concerned) and may change in the future.
 package ast
 
 import (
-	"github.com/glycerine/dynamic-go/backend/file"
-	"github.com/glycerine/dynamic-go/backend/token"
+	"github.com/glycerine/dyg/backend/file"
+	"github.com/glycerine/dyg/backend/token"
 )
 
 // All nodes implement the Node interface.

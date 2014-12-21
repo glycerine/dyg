@@ -91,7 +91,7 @@ func (c *funcContext) translateExpr(expr ast.Expr) *expression {
 			if len(c.flattened) != 0 {
 				args = "$args"
 			}
-			return c.formatExpr(`new ($sliceType(%s.Object))($global.Array.prototype.slice.call(%s, []))`, c.p.pkgVars["github.com/glycerine/dynamic-go/frontend/js"], args)
+			return c.formatExpr(`new ($sliceType(%s.Object))($global.Array.prototype.slice.call(%s, []))`, c.p.pkgVars["github.com/glycerine/dyg/frontend/js"], args)
 		case "Module":
 			return c.formatExpr("$module")
 		}

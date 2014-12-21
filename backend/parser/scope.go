@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/glycerine/dynamic-go/backend/ast"
+	"github.com/glycerine/dyg/backend/ast"
 )
 
 type _scope struct {

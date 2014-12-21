@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"unicode/utf8"
 
-	"github.com/glycerine/dynamic-go/backend/parser"
+	"github.com/glycerine/dyg/backend/parser"
 )
 
 type _regExpObject struct {

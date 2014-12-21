@@ -1,10 +1,10 @@
 /*
 Package otto is a JavaScript parser and interpreter written natively in Go.
 
-http://godoc.org/github.com/glycerine/dynamic-go/backend
+http://godoc.org/github.com/glycerine/dyg/backend
 
     import (
-        "github.com/glycerine/dynamic-go/backend"
+        "github.com/glycerine/dyg/backend"
     )
 
 Run something in the VM
@@ -81,7 +81,7 @@ Parser
 
 A separate parser is available in the parser package if you're just interested in building an AST.
 
-http://godoc.org/github.com/glycerine/dynamic-go/backend/parser
+http://godoc.org/github.com/glycerine/dyg/backend/parser
 
 Parse and return an AST
 
@@ -105,9 +105,9 @@ Parse and return an AST
 
 otto
 
-You can run (Go) JavaScript from the commandline with: http://github.com/glycerine/dynamic-go/backend/tree/master/otto
+You can run (Go) JavaScript from the commandline with: http://github.com/glycerine/dyg/backend/tree/master/otto
 
-	$ go get -v github.com/glycerine/dynamic-go/backend/otto
+	$ go get -v github.com/glycerine/dyg/backend/otto
 
 Run JavaScript by entering some source on stdin or by giving otto a filename:
 
@@ -118,13 +118,13 @@ underscore
 Optionally include the JavaScript utility-belt library, underscore, with this import:
 
 	import (
-		"github.com/glycerine/dynamic-go/backend"
-		_ "github.com/glycerine/dynamic-go/backend/underscore"
+		"github.com/glycerine/dyg/backend"
+		_ "github.com/glycerine/dyg/backend/underscore"
 	)
 
 	// Now every otto runtime will come loaded with underscore
 
-For more information: http://github.com/glycerine/dynamic-go/backend/tree/master/underscore
+For more information: http://github.com/glycerine/dyg/backend/tree/master/underscore
 
 Caveat Emptor
 
@@ -163,7 +163,7 @@ If you want to stop long running executions (like third-party code), you can use
         "os"
         "time"
 
-        "github.com/glycerine/dynamic-go/backend"
+        "github.com/glycerine/dyg/backend"
     )
 
     var halt = errors.New("Stahp")
@@ -227,7 +227,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/glycerine/dynamic-go/backend/registry"
+	"github.com/glycerine/dyg/backend/registry"
 )
 
 // Otto is the representation of the JavaScript runtime. Each instance of Otto has a self-contained namespace.

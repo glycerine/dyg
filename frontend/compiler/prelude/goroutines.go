@@ -24,7 +24,7 @@ var $callDeferred = function(deferred, jsErr) {
     var newErr = null;
     try {
       $deferFrames.push(deferred);
-      $panic(new $packages["github.com/glycerine/dynamic-go/frontend/js"].Error.Ptr(jsErr));
+      $panic(new $packages["github.com/glycerine/dyg/frontend/js"].Error.Ptr(jsErr));
     } catch (err) {
       newErr = err;
     }

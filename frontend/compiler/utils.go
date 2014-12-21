@@ -449,7 +449,7 @@ func encodeString(s string) string {
 }
 
 func isJsPackage(pkg *types.Package) bool {
-	return pkg != nil && pkg.Path() == "github.com/glycerine/dynamic-go/frontend/js"
+	return pkg != nil && pkg.Path() == "github.com/glycerine/dyg/frontend/js"
 }
 
 func isJsObject(t types.Type) bool {

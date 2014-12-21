@@ -5,7 +5,7 @@ package time
 import (
 	"strings"
 
-	"github.com/glycerine/dynamic-go/frontend/js"
+	"github.com/glycerine/dyg/frontend/js"
 )
 
 type runtimeTimer struct {
